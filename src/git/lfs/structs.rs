@@ -163,7 +163,7 @@ pub struct VerifiableLockList {
     pub next_cursor: String,
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Default)]
 pub struct LockListQuery {
     pub path: Option<String>,
     pub id: Option<String>,
